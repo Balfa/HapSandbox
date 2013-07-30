@@ -1,0 +1,61 @@
+# Mo's standard Visual Studio .hgignore
+ 
+# use glob syntax
+syntax: glob
+ 
+# Other SCMs
+# # VSS
+*.vssscc
+*.vspscc
+*.scc
+ 
+# csc.exe C# compiler
+[Bb]in/[Dd]ebug*/** # Debug
+[Bb]in/[Rr]elease*/** # Release
+obj/[Dd]ebug*/**
+obj/[Rr]elease*/**
+ 
+# Visual Studio
+*.suo
+*csproj.user
+*.pubxml.user
+ 
+# NuGet package management system.
+packages/** # This should only be ignored if NuGet Package Restore enabled. And NuGet Package Restore SHOULD be enabled!
+ 
+# File Types
+*.obj
+*.aps
+*.pch
+*_i.c
+*_p.c
+*.ncb
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.gpState
+ 
+# ReSharper productivity tool (http://www.jetbrains.com/resharper)
+_ReSharper*/** # Working directory
+ 
+# NUnit unit-testing framework (http://www.nunit.org/)
+[Tt]est[Rr]esult* # test results
+nunit-result.xml # scripted test results (usually appear only on build server)
+*VisualState.xml # GUI user prefs
+ 
+# NCrunch concurrent testing tool (http://www.ncrunch.net
+_NCrunch_*/** # Working Directory
+*.ncrunchsolution.user # User-specific settings
+ 
+# Sonar code quality tool (http://www.sonarsource.org)
+.sonar/** # Working directory
+ 
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+ 
+# Project-specific below here...
